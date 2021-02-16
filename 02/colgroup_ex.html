@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colgroup</title>
+        <style>
+            table, th, td {
+                border:1px solid #ccc;
+            }
+            td {
+                width:100px;  /* 셀 너비 */
+                height:30px;  /* 셀 높이 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption>
+                colgroup 연습
+            </caption>
+
+            <colgroup>
+                <col> <!-- 1 -->
+                <col span="2" style="background-color:blue;"> <!-- 2~3 -->
+                <col style="background-color:yellow;"> <!-- 4 -->
+            </colgroup>
+
+            <tr>
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td>     
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td> 
+                <td></td> 
+                <td></td>     
+            </tr>
+        </table>
+    </body>
+</html>
